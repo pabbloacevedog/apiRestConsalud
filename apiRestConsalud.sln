@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apiRestConsalud", "apiRestConsalud\apiRestConsalud.csproj", "{4F1CF5F9-D5E8-46A8-BA65-E631D57B08EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F1CF5F9-D5E8-46A8-BA65-E631D57B08EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F1CF5F9-D5E8-46A8-BA65-E631D57B08EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F1CF5F9-D5E8-46A8-BA65-E631D57B08EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F1CF5F9-D5E8-46A8-BA65-E631D57B08EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B133C47F-9926-4479-9A0B-2D29AF62DCF6}
+	EndGlobalSection
+EndGlobal

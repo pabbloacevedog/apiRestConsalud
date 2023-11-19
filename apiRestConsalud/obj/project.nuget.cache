@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "PVBOkH/Ewb8+fNtncLtX+Gm5zx7Lhv30MhLw2V59Bcp91COfds22yzi8qSdNCZ3b+5sVan4sNZFvvFBnw5KCVg==",
+  "success": true,
+  "projectFilePath": "/Users/pabloag/Desktop/DEV/19-11-2023/apiRestConsalud/apiRestConsalud/apiRestConsalud.csproj",
+  "expectedPackageFiles": [
+    "/Users/pabloag/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/pabloag/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/pabloag/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/pabloag/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "/Users/pabloag/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "/Users/pabloag/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "/Users/pabloag/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

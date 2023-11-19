@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "YHgXpkjjOf1PVRBjJNyGpxITteGYbGlJlBAXV4WMjKc=",
+  "Source": "apiRestConsalud",
+  "BasePath": "_content/apiRestConsalud",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
