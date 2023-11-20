@@ -9,5 +9,3 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = testApiConsalud
 build_property.ProjectDir = /Users/pabloag/Desktop/DEV/19-11-2023/Consalud/apiRestConsalud/testApiConsalud/
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 

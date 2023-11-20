@@ -22,4 +22,17 @@
     <PackageReference Include="Moq" Version="4.20.69" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Pruebas\" />
+    <None Remove="Pruebas\Services\" />
+    <None Remove="Pruebas\Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pruebas\" />
+    <Folder Include="Pruebas\Services\" />
+    <Folder Include="Pruebas\Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\apiRestConsalud\apiRestConsalud.csproj" />
+  </ItemGroup>
 </Project>
