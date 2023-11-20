@@ -1,5 +1,44 @@
 ﻿<Properties StartupConfiguration="{4F1CF5F9-D5E8-46A8-BA65-E631D57B08EE}|Default">
-  <MonoDevelop.Ide.ItemProperties.testApiConsalud FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.testApiConsalud PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.apiRestConsalud PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.apiRestConsalud PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="testApiConsalud/Pruebas/Controllers/FacturaControllerTests.cs">
+    <Files>
+      <File FileName="apiRestConsalud/Program.cs" Line="19" Column="8" />
+      <File FileName="apiRestConsalud/ApiKeyAuthenticationHandler.cs" Line="38" Column="67" />
+      <File FileName="apiRestConsalud/Controllers/FacturaController.cs" Line="11" Column="28" />
+      <File FileName="apiRestConsalud/appsettings.json" Line="9" Column="14" />
+      <File FileName="apiRestConsalud/Helpers/ApiKeyAuthenticationOptions.cs" Line="1" Column="1" />
+      <File FileName="apiRestConsalud/Services/FacturaService.cs" Line="9" Column="32" />
+      <File FileName="testApiConsalud/Pruebas/Services/FacturaServiceTests.cs" Line="18" Column="61" />
+      <File FileName="testApiConsalud/Pruebas/Controllers/FacturaControllerTests.cs" Line="75" Column="1" />
+      <File FileName="testApiConsalud/Usings.cs" Line="1" Column="1" />
+      <File FileName="testApiConsalud/testApiConsalud.csproj" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="apiRestConsalud" expanded="True">
+            <Node name="apiRestConsalud" selected="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Helpers" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="testApiConsalud">
+              <Node name="Pruebas" expanded="True">
+                <Node name="Controllers" expanded="True" />
+                <Node name="Services" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
