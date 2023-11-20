@@ -28,12 +28,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:7155/Factura/11488103-1",
+					"raw": "https://apirestconsalud.azurewebsites.net/Factura/11488103-1",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"apirestconsalud",
+						"azurewebsites",
+						"net"
 					],
-					"port": "7155",
 					"path": [
 						"Factura",
 						"11488103-1"
@@ -63,12 +64,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:7155/Factura",
+					"raw": "https://apirestconsalud.azurewebsites.net/Factura",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"apirestconsalud",
+						"azurewebsites",
+						"net"
 					],
-					"port": "7155",
 					"path": [
 						"Factura"
 					]
@@ -97,12 +99,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:7155/Factura/comprador-mas-compras",
+					"raw": "https://apirestconsalud.azurewebsites.net/Factura/comprador-mas-compras",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"apirestconsalud",
+						"azurewebsites",
+						"net"
 					],
-					"port": "7155",
 					"path": [
 						"Factura",
 						"comprador-mas-compras"
@@ -132,12 +135,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:7155/Factura/compradores-con-monto-total",
+					"raw": "https://apirestconsalud.azurewebsites.net/Factura/compradores-con-monto-total",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"apirestconsalud",
+						"azurewebsites",
+						"net"
 					],
-					"port": "7155",
 					"path": [
 						"Factura",
 						"compradores-con-monto-total"
@@ -167,12 +171,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:7155/Factura/facturas-por-comuna/89",
+					"raw": "https://apirestconsalud.azurewebsites.net/Factura/facturas-por-comuna/89",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"apirestconsalud",
+						"azurewebsites",
+						"net"
 					],
-					"port": "7155",
 					"path": [
 						"Factura",
 						"facturas-por-comuna",

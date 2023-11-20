@@ -32,3 +32,4 @@
 /Users/pabloag/Desktop/DEV/19-11-2023/Consalud/apiRestConsalud/apiRestConsalud/obj/Release/net6.0/apiRestConsalud.pdb
 /Users/pabloag/Desktop/DEV/19-11-2023/Consalud/apiRestConsalud/apiRestConsalud/obj/Release/net6.0/apiRestConsalud.genruntimeconfig.cache
 /Users/pabloag/Desktop/DEV/19-11-2023/Consalud/apiRestConsalud/apiRestConsalud/obj/Release/net6.0/ref/apiRestConsalud.dll
+/Users/pabloag/Desktop/DEV/19-11-2023/Consalud/apiRestConsalud/apiRestConsalud/obj/Release/net6.0/apiRestConsalud.sourcelink.json

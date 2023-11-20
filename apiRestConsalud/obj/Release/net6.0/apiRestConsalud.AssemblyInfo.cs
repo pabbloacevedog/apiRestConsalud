@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("apiRestConsalud")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3583da1d538d73b7bbae66b4344abf431a3554e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("apiRestConsalud")]
 [assembly: System.Reflection.AssemblyTitleAttribute("apiRestConsalud")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace apiRestConsalud.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("/")]
     public class FacturaController : ControllerBase
     {
         private readonly FacturaService _facturaService;
