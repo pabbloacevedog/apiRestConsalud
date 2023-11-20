@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/pabloag/Desktop/DEV/19-11-2023/Consalud/apiRestConsalud/apiRestConsalud/apiRestConsalud.csproj": {}
+    "/Users/pabloag/Desktop/DEV/19-11-2023/Consalud/apiRestConsalud/testApiConsalud/testApiConsalud.csproj": {}
   },
   "projects": {
-    "/Users/pabloag/Desktop/DEV/19-11-2023/Consalud/apiRestConsalud/apiRestConsalud/apiRestConsalud.csproj": {
+    "/Users/pabloag/Desktop/DEV/19-11-2023/Consalud/apiRestConsalud/testApiConsalud/testApiConsalud.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pabloag/Desktop/DEV/19-11-2023/Consalud/apiRestConsalud/apiRestConsalud/apiRestConsalud.csproj",
-        "projectName": "apiRestConsalud",
-        "projectPath": "/Users/pabloag/Desktop/DEV/19-11-2023/Consalud/apiRestConsalud/apiRestConsalud/apiRestConsalud.csproj",
+        "projectUniqueName": "/Users/pabloag/Desktop/DEV/19-11-2023/Consalud/apiRestConsalud/testApiConsalud/testApiConsalud.csproj",
+        "projectName": "testApiConsalud",
+        "projectPath": "/Users/pabloag/Desktop/DEV/19-11-2023/Consalud/apiRestConsalud/testApiConsalud/testApiConsalud.csproj",
         "packagesPath": "/Users/pabloag/.nuget/packages/",
-        "outputPath": "/Users/pabloag/Desktop/DEV/19-11-2023/Consalud/apiRestConsalud/apiRestConsalud/obj/",
+        "outputPath": "/Users/pabloag/Desktop/DEV/19-11-2023/Consalud/apiRestConsalud/testApiConsalud/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/pabloag/.nuget/NuGet/NuGet.Config"
@@ -38,13 +38,29 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Newtonsoft.Json": {
+            "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[13.0.3, )"
+              "version": "[17.1.0, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "Moq": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[4.20.69, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
             }
           },
           "imports": [
@@ -59,9 +75,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

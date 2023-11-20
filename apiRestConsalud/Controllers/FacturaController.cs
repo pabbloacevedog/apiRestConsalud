@@ -3,6 +3,7 @@
 using apiRestConsalud.Models;
 using apiConsalud.Services;
 using Newtonsoft.Json.Linq;
+using Microsoft.AspNetCore.Authorization;
 
 namespace apiRestConsalud.Controllers
 {
@@ -17,59 +18,102 @@ namespace apiRestConsalud.Controllers
             _facturaService = facturaService;
         }
 
+        [Authorize(AuthenticationSchemes = "ApiKeyScheme")]
         [HttpGet]
-        public IEnumerable<Factura> GetFacturas()
+        public ActionResult<IEnumerable<Factura>> GetFacturas()
         {
-            var facturasConTotales = _facturaService.GetFacturas();
-            return _facturaService.FormatearFactura(facturasConTotales);
+            try
+            {
+                var facturasConTotales = _facturaService.GetFacturas();
+                var facturasFormateadas = _facturaService.FormatearFactura(facturasConTotales);
+                return Ok(facturasFormateadas);
+            }
+            catch (Exception ex)
+            {
+                // Log de la excepción si es necesario
+                return StatusCode(500, "Error interno del servidor");
+            }
         }
 
+        [Authorize(AuthenticationSchemes = "ApiKeyScheme")]
         [HttpGet("{rut}")]
-        public IEnumerable<Factura> GetFacturasPorComprador(string rut)
+        public ActionResult<IEnumerable<Factura>> GetFacturasPorComprador(string rut)
         {
-            // Obtén el RUTComprador y el DvComprador de la URL
-            var rutComprador = rut.Substring(0, rut.Length - 2); // Elimina el último carácter (DvComprador)
-            var dvComprador = rut.Substring(rut.Length - 1); // Obtiene el último carácter (DvComprador)
-            Console.WriteLine(rutComprador + '-' + dvComprador);
+            try
+            {
+                var rutComprador = rut.Substring(0, rut.Length - 2);
+                var dvComprador = rut.Substring(rut.Length - 1);
 
-            // Filtra las facturas por el RUTComprador y el DvComprador
-            var facturas = _facturaService.GetFacturas()
-                .Where(f =>
-                    ((float)f["RUTComprador"]).ToString().TrimEnd('0') == rutComprador &&
-                    (string)f["DvComprador"] == dvComprador)
-                .ToList();
+                var facturas = _facturaService.GetFacturas()
+                    .Where(f =>
+                        ((float)f["RUTComprador"]).ToString().TrimEnd('0') == rutComprador &&
+                        (string)f["DvComprador"] == dvComprador)
+                    .ToList();
 
-            return _facturaService.FormatearFactura(facturas);
+                return Ok(_facturaService.FormatearFactura(facturas));
+            }
+            catch (Exception ex)
+            {
+                // Log de la excepción si es necesario
+                return StatusCode(500, "Error interno del servidor");
+            }
         }
 
-
+        [Authorize(AuthenticationSchemes = "ApiKeyScheme")]
         [HttpGet("comprador-mas-compras")]
         public IActionResult GetCompradorConMasCompras()
         {
-            var comprador = _facturaService.GetCompradorConMasCompras();
+            try
+            {
+                var comprador = _facturaService.GetCompradorConMasCompras();
 
-            if (comprador != null)
-            {
-                return Ok(comprador.ToString());
+                if (comprador != null)
+                {
+                    return Ok(comprador.ToString());
+                }
+                else
+                {
+                    return NotFound();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return NotFound(); 
+                // Log de la excepción si es necesario
+                return StatusCode(500, "Error interno del servidor");
             }
         }
 
+        [Authorize(AuthenticationSchemes = "ApiKeyScheme")]
         [HttpGet("compradores-con-monto-total")]
         public IActionResult GetCompradoresConMontoTotalDeCompras()
         {
-            var compradores = _facturaService.GetCompradoresConMontoTotalDeCompras();
-            return Ok(compradores.ToString());
+            try
+            {
+                var compradores = _facturaService.GetCompradoresConMontoTotalDeCompras();
+                return Ok(compradores.ToString());
+            }
+            catch (Exception ex)
+            {
+                // Log de la excepción si es necesario
+                return StatusCode(500, "Error interno del servidor");
+            }
         }
 
+        [Authorize(AuthenticationSchemes = "ApiKeyScheme")]
         [HttpGet("facturas-por-comuna/{comuna}")]
         public IActionResult GetFacturasAgrupadasPorComuna(double comuna)
         {
-            var facturas = _facturaService.GetFacturasAgrupadasPorComuna(comuna);
-            return Ok(facturas.ToString());
+            try
+            {
+                var facturas = _facturaService.GetFacturasAgrupadasPorComuna(comuna);
+                return Ok(facturas.ToString());
+            }
+            catch (Exception ex)
+            {
+                // Log de la excepción si es necesario
+                return StatusCode(500, "Error interno del servidor");
+            }
         }
+
     }
 }
